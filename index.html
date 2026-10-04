@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvette Music — Your Music, Your Vibe</title>
+<meta name="description" content="Velvette Music — free Android music player. Background play, offline downloads, synced lyrics. Made by RAJIV RAI.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#060606;color:#f2ecdc;min-height:100vh;
+  background-image:
+    radial-gradient(700px 420px at 50% -60px, rgba(232,197,71,.14), transparent 65%),
+    radial-gradient(600px 500px at 8% 40%, rgba(184,134,11,.08), transparent 60%),
+    radial-gradient(600px 500px at 92% 70%, rgba(184,134,11,.08), transparent 60%);}
+h1{font-family:'Playfair Display',serif}
+.gold-text{background:linear-gradient(120deg,#fbf3c8 0%,#e8c547 38%,#b8860b 68%,#f6e27a 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.page{max-width:560px;margin:0 auto;padding:56px 22px 30px;text-align:center}
+.app-logo{width:128px;height:128px;border-radius:34px;display:block;margin:0 auto 22px;
+  box-shadow:0 0 0 2.5px rgba(232,197,71,.65),0 0 70px rgba(232,197,71,.35),0 18px 44px rgba(0,0,0,.6)}
+.app-name{font-size:clamp(42px,9vw,60px);font-weight:800;line-height:1.1;margin-bottom:10px}
+.badge{display:inline-block;font-size:12.5px;font-weight:700;color:#e8c547;letter-spacing:1.5px;text-transform:uppercase;
+  border:1px solid rgba(232,197,71,.45);border-radius:999px;padding:7px 18px;background:rgba(232,197,71,.07);margin-bottom:10px}
+.tagline{color:#b9b09a;font-size:15.5px;line-height:1.65;max-width:420px;margin:0 auto 34px}
+.phone-stage{position:relative;display:inline-block;margin-bottom:40px}
+.phone-stage::before{content:"";position:absolute;inset:-40px;margin:auto;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,197,71,.30),transparent 65%);filter:blur(28px);z-index:0}
+.iphone{position:relative;z-index:1;width:270px;height:556px;background:#000;border-radius:54px;padding:11px;
+  box-shadow:0 0 0 2px #3d3d3d,0 0 0 4.5px rgba(232,197,71,.6),0 34px 90px rgba(0,0,0,.85),0 0 80px rgba(232,197,71,.25);
+  animation:float 5.5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-13px)}}
+.screen{position:relative;width:100%;height:100%;border-radius:44px;overflow:hidden;background:#111}
+.screen img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.island{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:94px;height:26px;background:#000;
+  border-radius:20px;z-index:2;box-shadow:inset 0 0 0 1px #262626}
+.side-btn{position:absolute;background:#333;border-radius:3px}
+.sb1{left:-3px;top:110px;width:3px;height:32px}
+.sb2{left:-3px;top:152px;width:3px;height:58px}
+.sb3{left:-3px;top:218px;width:3px;height:58px}
+.sb4{right:-3px;top:168px;width:3px;height:86px}
+.dl h2{font-family:'Playfair Display',serif;font-size:30px;margin-bottom:6px}
+.dl p{color:#b9b09a;font-size:14.5px;margin-bottom:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;
+  border-radius:999px;padding:16px 40px;font-size:16px;margin:6px;transition:transform .18s,box-shadow .18s;border:none;cursor:pointer}
+.btn-gold{background:linear-gradient(120deg,#fbf3c8,#e8c547 45%,#c99b2e);color:#241a04;
+  box-shadow:0 10px 34px rgba(232,197,71,.35);min-width:280px}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 44px rgba(232,197,71,.5)}
+.btn-ghost{background:transparent;color:#e8c547;box-shadow:inset 0 0 0 1.5px rgba(232,197,71,.55);min-width:280px}
+.btn-ghost:hover{transform:translateY(-2px);background:rgba(232,197,71,.08)}
+.dl-note{color:#8d8672;font-size:12.5px;margin-top:14px}
+footer{margin-top:56px;padding:26px 0 10px;border-top:1px solid rgba(232,197,71,.15)}
+.socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.soc{text-decoration:none;color:#f2ecdc;font-size:13px;font-weight:600;border:1px solid rgba(232,197,71,.4);
+  border-radius:999px;padding:9px 18px;background:rgba(232,197,71,.05);transition:all .2s}
+.soc:hover{background:linear-gradient(120deg,#fbf3c8,#e8c547);color:#241a04}
+.copy{color:#8d8672;font-size:12.5px}
+.copy b{color:#e8c547}
+</style>
+</head>
+<body>
+<div class="page">
+  <img class="app-logo" src="assets/logo.png" alt="Velvette Music logo">
+  <h1 class="app-name"><span class="gold-text">Velvette Music</span></h1>
+  <div class="badge">v1.7.1 • Latest</div>
+  <p class="tagline">Your music, your vibe — stream millions of songs free, in a premium black &amp; gold experience.</p>
+  <div class="phone-stage">
+    <div class="iphone">
+      <div class="side-btn sb1"></div><div class="side-btn sb2"></div>
+      <div class="side-btn sb3"></div><div class="side-btn sb4"></div>
+      <div class="screen">
+        <div class="island"></div>
+        <img src="assets/shot-home-new.jpg" alt="Velvette Music app screenshot">
+      </div>
+    </div>
+  </div>
+  <div class="dl" id="download">
+    <h2>Press <span class="gold-text">play</span></h2>
+    <p>Free download for Android</p>
+    <a class="btn btn-gold" href="https://github.com/Rajivrai07/Velvette-Music/releases/download/v1.7.1/Velvette-Music-arm64.apk">⬇ Download APK</a><br>
+    <a class="btn btn-ghost" href="https://github.com/Rajivrai07/Velvette-Music/releases/download/v1.7.1/Velvette-Music-armeabi-v7a.apk">Older phones (32-bit)</a>
+    <div class="dl-note">Android 8.0+ &nbsp;•&nbsp; 100% free &nbsp;•&nbsp; No sign-up needed</div>
+  </div>
+  <footer>
+    <div class="socials">
+      <a class="soc" href="https://www.youtube.com/@rajivlive143" target="_blank" rel="noopener">▶ YouTube</a>
+      <a class="soc" href="https://www.youtube.com/@rajivshortsff143" target="_blank" rel="noopener">▶ Shorts</a>
+      <a class="soc" href="https://www.instagram.com/Rajivrai.07" target="_blank" rel="noopener">📸 Instagram</a>
+    </div>
+    <div class="copy">© 2026 <b>RAJIV RAI</b> • Velvette Music</div>
+  </footer>
+</div>
+</body>
+</html>
